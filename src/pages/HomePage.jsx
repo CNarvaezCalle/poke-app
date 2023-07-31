@@ -26,7 +26,6 @@ const HomePage = () => {
 
   return (
     <div>
-      <h1>POKEDEX</h1>
       <h2>Hello Trainer</h2>
       <p>To start the app, give me your name trainer 🍧</p>
       <form onSubmit={handleSubmit}>

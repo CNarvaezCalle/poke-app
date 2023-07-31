@@ -10,7 +10,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className='principal__container'>
       <Routes>
         <Route path='/' element={<HomePage />}/> 
         <Route element={<ProtectedRoutes />}>

@@ -1,0 +1,31 @@
+.header {
+    position: relative;
+}
+
+.header__background {
+    min-width: 100%;
+    /* min-height: 5rem; */
+}
+
+.header__logo {
+    width: 20%;
+    /* min-width: 200px;
+    max-height: 100px;
+    min-height: 10px; */
+    /* /* width: auto; */
+    
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    .header__background {
+       min-width: 100%;
+       min-height: 200%;
+    }
+
+    .header__logo {
+        width: 50%;
+    }
+}
