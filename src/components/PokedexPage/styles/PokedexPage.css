@@ -58,3 +58,15 @@
   gap: 3em 2em;
   margin-top: 4em;
 }
+
+@media only screen and (max-width: 600px) {
+  .pokedex__container {
+    min-width: 100%;
+    margin: 0;
+  }
+
+  .pokedex__cards {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
