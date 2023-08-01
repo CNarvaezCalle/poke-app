@@ -4,18 +4,25 @@ import { useEffect, useRef, useState } from "react"
 import PokeCard from "../components/PokedexPage/PokeCard"
 import '../components/PokedexPage/styles/PokedexPage.css'
 import PokeHeader from "./PokeHeader"
+import SelectType from "../components/PokedexPage/SelectType"
+
 
 const PokedexPage = () => {
   const [inputValue, setInputValue] = useState()
+  const [selectValue, setSelectValue] = useState('allPokemons')
 
   const trainer = useSelector(reducer => reducer.trainer)
 
-  const url = 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=600/'
-  const [ pokemons, getAllPokemons ] = useFetch(url)
+  const url = 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=300/'
+  const [ pokemons, getAllPokemons, getPokemonsByType ] = useFetch(url)
 
   useEffect(() =>{
-    getAllPokemons()
-  }, [])
+    if(selectValue === 'allPokemons'){
+      getAllPokemons()
+    } else {
+      getPokemonsByType(selectValue)
+    }
+  }, [selectValue])
 
   const inputSearch = useRef() 
 
@@ -39,6 +46,7 @@ const PokedexPage = () => {
           <input className="pokedex__input" ref={inputSearch} type="text" placeholder="Gotta catch 'em all!"/>
           <button className="pokedex__button">Search</button>
         </form>
+        <SelectType setSelectValue={setSelectValue}/>
       </div>
       <div className="pokedex__cards">
         {

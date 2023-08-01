@@ -1,5 +1,6 @@
 .header {
     position: relative;
+    min-width: 100vw;
 }
 
 .header__background {
