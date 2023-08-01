@@ -10,7 +10,7 @@ const PokedexPage = () => {
 
   const trainer = useSelector(reducer => reducer.trainer)
 
-  const url = 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=40/'
+  const url = 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=600/'
   const [ pokemons, getAllPokemons ] = useFetch(url)
 
   useEffect(() =>{
