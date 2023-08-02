@@ -95,7 +95,7 @@
   margin: 1rem;
 }
 
-//
+
 
 .pokemon__ability__container {
   display: flex;
@@ -140,13 +140,13 @@
   flex-direction: column;
 } */
 
-.pokemon__stats__list .pokemon__stats__wrapper {
-  /* display: flex;
+/* .pokemon__stats__list .pokemon__stats__wrapper {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 8px;
-  width: 100%; */
-}
+  width: 100%; 
+}*/
 
 .container__stats {
   display: flex;
