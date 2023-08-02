@@ -16,8 +16,8 @@ const PokeNamePage = () => {
 
   console.log(pokemon);
 
-  const pokeType = pokemon?.types[0].type.name 
-  console.log(pokeType)
+  const pokeType = pokemon?.types[0].type.name;
+  console.log(pokeType);
 
   return (
     <div className="pokemon__container">
@@ -28,25 +28,47 @@ const PokeNamePage = () => {
           src={pokemon?.sprites.other["official-artwork"].front_default}
           alt=""
         />
-        <h2 className="pokemon__number"># {pokemon?.id}</h2>
-        <h2 className="pokemon__name">{pokemon?.name}</h2>
-        <h3>Type</h3>
-        <ul>
-          {pokemon?.types.map((typeInfo) => (
-            <li
-              className={`pokemon__types ${typeInfo?.type.name}-color`}
-              key={typeInfo?.type.url}
-            >
-              {typeInfo?.type.name}
-            </li>
-          ))}
-        </ul>
-        <h3>Abilities</h3>
-        <ul>
-          {pokemon?.abilities.map((abilities) => (
-            <li>{abilities?.ability.name}</li>
-          ))}
-        </ul>
+        <h2 className={`pokemon__number ${pokemon?.types[0].type.name}-color`}>
+          # {pokemon?.id}
+        </h2>
+        <h2 className={`pokemon__name ${pokemon?.types[0].type.name}-color`}>
+          {pokemon?.name}
+        </h2>
+        <section className="pokemon__wh">
+          <div className="weight__container">
+            <h4 className="pokemon__weight">Weight</h4>
+            <span className="pokemon__weight__value">{pokemon?.weight}</span>
+          </div>
+          <div className="height__container">
+            <h4 className="pokemon__height">Height</h4>
+            <span className="pokemon__height__value">{pokemon?.height}</span>
+          </div>
+        </section>
+        <section className="pokemon__char">
+          <div className="pokemon__type__container">
+            <h3 className="pokemon__type">Type</h3>
+            <ul className="pokemon__type__list">
+              {pokemon?.types.map((typeInfo) => (
+                <li
+                  className={`pokemon__types ${typeInfo?.type.name}-gradient`}
+                  key={typeInfo?.type.url}
+                >
+                  {typeInfo?.type.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="pokemon__ability__container">
+            <h3 className="pokemon__ability">Abilities</h3>
+            <ul className="pokemon__ability__list">
+              {pokemon?.abilities.map((abilities) => (
+                <li className="pokemon__abilities">
+                  {abilities?.ability.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
       </section>
 
       <section className="pokemon__stats__container">
@@ -77,7 +99,10 @@ const PokeNamePage = () => {
         <h2 className="movements__title">Movements</h2>
         <ul className="movements__list">
           {pokemon?.moves.map((moveList) => (
-            <li className={`movements__movement ${pokeType}-color`} key={moveList.move.url} >
+            <li
+              className={`movements__movement ${pokeType}-background`}
+              key={moveList.move.url}
+            >
               {moveList.move.name}
             </li>
           ))}

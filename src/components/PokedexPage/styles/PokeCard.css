@@ -85,6 +85,7 @@
 
 .fire-gradient {
   background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+  color: white;
 }
 
 .fire-border {
@@ -95,8 +96,14 @@
   color: #E35825;
 }
 
+.fire-background-color {
+  background-color: #E35825;
+  color: white;
+}
+
 .grass-gradient {
   background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+  
 }
 
 .grass-border {

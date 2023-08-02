@@ -40,13 +40,16 @@ const PokedexPage = () => {
   return (
     <div className="pokedex__container">
       <PokeHeader />
+      <section className="pokedex__wrapper">
       <div className="pokedex__header">
         <p className="pokedex__greeting">Welcome <span className="pokedex__name">{trainer}</span>, here you can find information about your favourite Pokemon</p>
-        <form className="pokedex__search__container" onSubmit={handleSubmit}>
-          <input className="pokedex__input" ref={inputSearch} type="text" placeholder="Gotta catch 'em all!"/>
-          <button className="pokedex__button">Search</button>
-        </form>
-        <SelectType setSelectValue={setSelectValue}/>
+        <div className="pokedex__value">
+            <form className="pokedex__search__container" onSubmit={handleSubmit}>
+            <input className="pokedex__input" ref={inputSearch} type="text" placeholder="Gotta catch 'em all!"/>
+            <button className="pokedex__button">Search</button>
+            </form>
+            <SelectType setSelectValue={setSelectValue}/>
+         </div>
       </div>
       <div className="pokedex__cards">
         {
@@ -67,6 +70,7 @@ const PokedexPage = () => {
 
         }
       </div>
+      </section>
     </div>
   )
 }

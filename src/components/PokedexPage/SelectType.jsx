@@ -18,11 +18,11 @@ const SelectType = ({ setSelectValue }) => {
   }
 
     return (
-    <select onChange={handleChange}>
-      <option value="allPokemons">All Types</option>
+    <select className="pokedex__search__container--type" onChange={handleChange}>
+      <option  value="allPokemons">Select by type</option>
       {
         types?.results.map(type=>(
-          <option key={type.url} value={type.url}>{type.name}</option>
+          <option className="pokedex__list" key={type.url} value={type.url}>{type.name}</option>
           //OJO ver que significa value
         ))
       }
