@@ -55,11 +55,28 @@
 .home__footer {
   position: absolute;
   bottom: 0;
-  width: 100vw;
+  /* width: 100vw; */
   text-align: center;
 }
 
 .home__background {
   width: 100%;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .home__logo {
+    width: 20rem;
+    margin: 20px 0; 
+  }
+
+  .home__greeting {
+    font-size: 2.2rem;
+
+  }
+  
+  .home__message {
+    font-size: 1.4rem;
+  }
+  
 }

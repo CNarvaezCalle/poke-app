@@ -10,6 +10,7 @@
 
 .header__logo {
     width: 20%;
+    min-width: 200px;
     /* min-width: 200px;
     max-height: 100px;
     min-height: 10px; */
@@ -20,13 +21,13 @@
     left: 5%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .header__background {
        /* min-width: 100%; */
        /* min-height: 200%; */
     }
 
-    .header__logo {
+    /* .header__logo {
         width: 50%;
-    }
+    } */
 }

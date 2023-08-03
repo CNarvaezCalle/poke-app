@@ -1,7 +1,6 @@
 .pokedex__container {
   margin: 0 2em 2em 0;
   max-width: 100%;
-
 }
 
 .pokedex__header {
@@ -39,6 +38,9 @@
 .pokedex__value {
   display: flex;
   margin-right: 50px;
+  flex-wrap: wrap; 
+  gap: 2rem 1rem;
+  justify-content: center;
 }
 
 .pokedex__search__container--type {
@@ -84,7 +86,6 @@
 
 @media only screen and (max-width: 600px) {
   .pokedex__container {
-    min-width: 100%;
     margin: 0;
   }
 
