@@ -1,0 +1,70 @@
+.button__page-container{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 6em;
+    padding-bottom: 1em;
+}
+
+
+.button__start {
+    background-color: #fb4949;
+    color: white;
+    /* border-radius: 10px 3px 3px 10px; */
+    text-align: center;
+    min-width: 4em;
+    min-height: 2em;
+    font-size: 1em;
+}
+
+.button__start:hover {
+    background-color: rgb(220, 58, 58);
+    color: white;
+}
+
+.button__previous {
+    background-color: #fb4949;
+    color: white;
+    text-align: center;
+    min-width: 4.5em;
+    min-height: 2em;
+    font-size: 1em;
+}
+
+.button__previous:hover {
+    background-color: rgb(220, 58, 58);
+    color: white;
+}
+
+.button__next {
+    background-color: #fb4949;
+    color: white;
+    text-align: center;
+    min-width: 4.5em;
+    min-height: 2em;
+    font-size: 1em;
+}
+
+.button__next:hover {
+    background-color: rgb(220, 58, 58);
+    color: white;
+}
+
+.button__last {
+    background-color: #fb4949;
+    color: white;
+    text-align: center;
+    min-width: 4em;
+    min-height: 2em;
+    font-size: 1em;
+}
+
+.button__last:hover {
+    background-color: rgb(220, 58, 58);
+    color: white;
+}
+
+.current__page {
+    color: black;
+    padding-top: 4px;
+}

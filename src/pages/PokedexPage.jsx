@@ -5,15 +5,21 @@ import PokeCard from "../components/PokedexPage/PokeCard"
 import '../components/PokedexPage/styles/PokedexPage.css'
 import PokeHeader from "./PokeHeader"
 import SelectType from "../components/PokedexPage/SelectType"
+import Pages from "../components/PokedexPage/Pages"
 
 
 const PokedexPage = () => {
   const [inputValue, setInputValue] = useState()
   const [selectValue, setSelectValue] = useState('allPokemons')
+  const [currentPage, setCurrentPage] = useState(1)
+  const itemsPerPage = 20;
+  const startIndex = (currentPage - 1) * itemsPerPage
+  const endIndex = startIndex + itemsPerPage
+  const lastPage = startIndex / itemsPerPage + 1
 
   const trainer = useSelector(reducer => reducer.trainer)
 
-  const url = 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=300/'
+  const url = 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=100000/'
   const [ pokemons, getAllPokemons, getPokemonsByType ] = useFetch(url)
 
   useEffect(() =>{
@@ -61,7 +67,7 @@ const PokedexPage = () => {
             />
           ))
           : 
-          pokemons?.results.map(poke => ( 
+          pokemons?.results.slice(startIndex, endIndex).map(poke => ( 
             <PokeCard
               key={poke.url}
               url={poke.url}
@@ -71,6 +77,12 @@ const PokedexPage = () => {
         }
       </div>
       </section>
+      <Pages 
+        pokemons={pokemons}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+        endIndex={endIndex}
+      />
     </div>
   )
 }
