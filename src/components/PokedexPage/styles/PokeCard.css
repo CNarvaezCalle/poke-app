@@ -96,6 +96,7 @@
   color: #E35825;
 }
 
+
 .fire-background-color {
   background-color: #E35825;
   color: white;
@@ -114,6 +115,11 @@
   color: #6abb98;
 }
 
+.grass-background-color {
+  background-color: #6abb98;
+  color: white;
+}
+
 .water-gradient {
   background: linear-gradient(179.57deg, #133258 -30.14%, #1479FB 56.16%, #82B2F1 114.85%); 
 }
@@ -126,6 +132,13 @@
   color: #1479FB;
 }
 
+.water-background-color {
+  background-color: #1479FB;
+  color: white;
+}
+
+
+
 .bug-gradient {
   background: linear-gradient(177.56deg, #9bf39a -58.92%, #50da4d 16.57%, #b6ffb5 109.53%); 
 }
@@ -136,6 +149,11 @@
 
 .bug-color {
   color: #46b844;
+}
+
+.bug-background-color {
+  background-color: #46b844;
+  color: white;
 }
 
 .fighting-gradient {
@@ -150,6 +168,11 @@
   color: #F1613C;
 }
 
+.fighting-background-color {
+  background-color: #F1613C;
+  color: white;
+}
+
 .poison-gradient {
   background: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);
 }
@@ -160,6 +183,11 @@
 
 .poison-color {
   color: #8e53c4;
+}
+
+.poison-background-color {
+  background-color: #8e53c4;
+  color: white;
 }
 
 .normal-gradient {
@@ -174,6 +202,11 @@
   color: #a75c6c;
 }
 
+.normal-background-color {
+  background-color: #a75c6c;
+  color: white;
+}
+
 .ground-gradient {
   background: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
 }
@@ -184,6 +217,11 @@
 
 .ground-color {
   color: #895C1A;
+}
+
+.ground-background-color {
+  background-color: #895C1A;
+  color: white;
 }
 
 .ghost-gradient {
@@ -198,6 +236,11 @@
   color: #454AA8;
 }
 
+.ghost-background-color {
+  background-color: #454AA8;
+  color: white;
+}
+
 .ice-gradient {
   background: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);
 }
@@ -208,6 +251,11 @@
 
 .ice-color {
   color: #4fb2d9;
+}
+
+.ice-background-color {
+  background-color: #4fb2d9;
+  color: white;
 }
 
 .steel-gradient {
@@ -222,6 +270,11 @@
   color: #728881;
 }
 
+.steel-background-color {
+  background-color: #728881;
+  color: white;
+}
+
 .rock-gradient {
   background: linear-gradient(177.03deg, #7E7E7E -11.97%, #b9b9c0 57.49%, #D3D3D3 135.64%);
 }
@@ -232,6 +285,11 @@
 
 .rock-color {
   color: #75757a;
+}
+
+.rock-background-color {
+  background-color: #75757a;
+  color: white;
 }
 
 .dark-gradient {
@@ -246,6 +304,11 @@
   color: #28413b;
 }
 
+.dark-background-color {
+  background-color: #28413b;
+  color: white;
+}
+
 .psychic-gradient {
   background: linear-gradient(179.75deg, #b6720c -19.96%, #da9e43 43.67%, #e2ad5e 108.4%);
 }
@@ -256,6 +319,11 @@
 
 .psychic-color {
   color: #cd943f;
+}
+
+.psychic-background-color {
+  background-color: #cd943f;
+  color: white;
 }
 
 .electric-gradient {
@@ -270,6 +338,11 @@
   color: #bcad09;
 }
 
+.electric-background-color {
+  background-color: #bcad09;
+  color: white;
+}
+
 .fairy-gradient {
   background: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 108.4%);
 }
@@ -282,6 +355,11 @@
   color: #C23867;
 }
 
+.fairy-background-color {
+  background-color: #C23867;
+  color: white;
+}
+
 .dragon-gradient {
   background: linear-gradient(179.75deg, #e7b22d -19.96%, #f2c656 43.67%, #f0d591 98.4%)
 }
@@ -292,6 +370,11 @@
 
 .dragon-color {
   color: #e1a449;
+}
+
+.dragon-background-color {
+  background-color: #e1a449;
+  color: white;
 }
 
 

@@ -1,5 +1,5 @@
 .pokedex__container {
-  margin: 0 2em 2em 0;
+  margin: 0;
   max-width: 100%;
 }
 
@@ -41,6 +41,7 @@
   flex-wrap: wrap; 
   gap: 2rem 1rem;
   justify-content: center;
+  align-items: center;
 }
 
 .pokedex__search__container--type {
@@ -82,6 +83,12 @@
   justify-content: space-evenly;
   gap: 3em 2em;
   margin-top: 6em;
+}
+
+@media screen and (max-width: 1620px) {
+  .pokedex__value {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {

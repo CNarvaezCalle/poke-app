@@ -50,7 +50,7 @@ const PokeNamePage = () => {
             <ul className="pokemon__type__list">
               {pokemon?.types.map((typeInfo) => (
                 <li
-                  className={`pokemon__types ${typeInfo?.type.name}-gradient`}
+                  className={`pokemon__types ${typeInfo?.type.name}-background-color`}
                   key={typeInfo?.type.url}
                 >
                   {typeInfo?.type.name}
@@ -95,6 +95,7 @@ const PokeNamePage = () => {
           ))}
         </ul>
       </section>
+      <hr className="hr"></hr>
       <section className="pokemon__movements">
         <h2 className="movements__title">Movements</h2>
         <ul className="movements__list">

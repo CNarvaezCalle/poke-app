@@ -66,5 +66,6 @@
 
 .current__page {
     color: black;
-    padding-top: 4px;
+    padding-top: 1px;
+    font-size: 1.3rem;
 }
