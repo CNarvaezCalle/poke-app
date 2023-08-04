@@ -49,6 +49,7 @@
   width: 150px;
   display: flex;
   justify-content: center;
+  border-radius: 10px;
 }
 
 .pokedex__list {

@@ -16,9 +16,8 @@ function App() {
         <Route element={<ProtectedRoutes />}>
           <Route path='/pokedex' element={<PokedexPage />}/> 
           <Route path='/pokedex/:name' element={<PokeNamePage />}/> 
-        </Route>
         <Route path='*' element={<Page404 />}/> 
-        //hacer el pokedex/:id//
+        </Route>
       </Routes>
     </div>
   ) 

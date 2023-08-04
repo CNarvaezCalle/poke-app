@@ -23,7 +23,6 @@ const SelectType = ({ setSelectValue }) => {
       {
         types?.results.map(type=>(
           <option className="pokedex__list" key={type.url} value={type.url}>{type.name}</option>
-          //OJO ver que significa value
         ))
       }
     </select>

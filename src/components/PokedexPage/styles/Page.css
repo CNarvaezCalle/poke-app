@@ -69,3 +69,11 @@
     padding-top: 1px;
     font-size: 1.3rem;
 }
+
+@media screen and (max-width: 600px) {
+    .button__page-container{
+        gap: 0.7em;
+        font-size: 0.8em;
+    }
+    
+}
