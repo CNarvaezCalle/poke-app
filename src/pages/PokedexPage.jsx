@@ -6,6 +6,8 @@ import '../components/PokedexPage/styles/PokedexPage.css'
 import PokeHeader from "./PokeHeader"
 import SelectType from "../components/PokedexPage/SelectType"
 import Pages from "../components/PokedexPage/Pages"
+import PageNotFound from "./PageNotFound"
+import '../components/PokedexPage/styles/PageNotFound.css'
 
 
 const PokedexPage = () => {
@@ -39,6 +41,8 @@ const PokedexPage = () => {
     setInputValue(inputSearch.current.value.trim().toLowerCase())
   }
 
+  
+
   const callbackFilter = (poke) => poke.name.includes(inputValue)
 
 
@@ -60,6 +64,9 @@ const PokedexPage = () => {
       <div className="pokedex__cards">
         {
           inputValue ? 
+          // pokemons?.results.filter(callbackFilter).lenght == 0 ?
+          // <PageNotFound /> problema: no puedo volver a buscar sin tener que regresar a la pagina anterior
+          // :
           pokemons?.results.filter(callbackFilter).map(poke => (
             <PokeCard
               key={poke.url}
